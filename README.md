@@ -26,7 +26,7 @@ Example Prometheus scrape configuration:
         - hostname:9417
 ```
 
-# What metrics are exported?
+# What metrics are exported?    
 
 Basic state (running or not), lifecycle (unexpected restart count) and resource usage metrics for each container, labeled by container name. Metrics are collected from the same instance of Docker that is running the exporter app.
 
@@ -57,7 +57,7 @@ If you enable the experimental features mode in Docker, [it does expose some ver
 To upgrade to a new version:
 
 1. Execute `docker rm --force docker_exporter` to stop the existing instance.
-1. Execute `docker pull prometheusnet/docker_exporter` to download the new version.
+1. Execute `docker pull cmosley/docker_exporter` to download the new version.
 1. Execute the `docker run` command from the quick start to start the new version.
 
 # Troubleshooting

@@ -1,4 +1,8 @@
+
 # docker_exporter
+
+Trying my best to pickup the torch from [prometheus-net/docker_exporter](https://github.com/prometheus-net/docker_exporter).  
+This broke from a relatively recent docker update, so I'm just building a new one that works with the latest docker.
 
 This app exports metrics about a Docker installation and any running containers to the [Prometheus](https://prometheus.io) metrics and monitoring system.
 
@@ -52,7 +56,7 @@ If you enable the experimental features mode in Docker, [it does expose some ver
 
 To upgrade to a new version:
 
-1. Execute `docekr rm --force docker_exporter` to stop the existing instance.
+1. Execute `docker rm --force docker_exporter` to stop the existing instance.
 1. Execute `docker pull prometheusnet/docker_exporter` to download the new version.
 1. Execute the `docker run` command from the quick start to start the new version.
 
